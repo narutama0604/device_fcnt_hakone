@@ -1,4 +1,4 @@
-# Device proprietary files - from M06-user 14 V06RM67D M06.20250425 release-keys, unless pinned
+# Device proprietary files - from qssi-user 15 V31RM50D 10636 release-keys, unless pinned
 
 # ACDB
 vendor/etc/acdbdata/IDP_UPD/IDP_UPD_acdb_cal.acdb
@@ -540,6 +540,7 @@ vendor/lib64/libscveObjectTracker_stub.so
 vendor/lib64/libvideoutils.so
 
 # Diag
+system/lib64/vendor.qti.diaghal-V1-ndk.so
 system_ext/lib64/libdiag_system.qti.so
 system_ext/lib64/libdiag_system.so
 system_ext/lib64/vendor.qti.diaghal@1.0.so
@@ -702,7 +703,7 @@ vendor/lib64/vendor.qti.esepowermanager@1.1.so
 
 # eUICC
 product/etc/sysconfig/euicc.xml
-product/priv-app/EuiccGoogle/EuiccGoogle.apk;PRESIGNED
+product/priv-app/EuiccGoogle_arm64/EuiccGoogle_arm64.apk;PRESIGNED
 
 # Felica
 product/etc/felica/common.cfg
@@ -724,6 +725,7 @@ vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service:vendor/bin/hw/
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc:vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.M06.rc|7f5fd3ac633e7458feaaed0c0e524782ddda26f3
 
 # FM
+system/lib64/vendor.qti.hardware.fm-V1-ndk.so
 system_ext/lib64/fm_helium.so
 system_ext/lib64/libfm-hci.so
 system_ext/lib64/vendor.qti.hardware.fm@1.0.so
@@ -1153,6 +1155,7 @@ vendor/lib64/libqmi_legacy.so
 vendor/lib64/libqmiservices.so
 
 # QSPM
+system_ext/lib64/vendor.qti.qspmhal-V1-ndk.so
 vendor/bin/vendor.qti.qspmhal@1.0-service
 vendor/etc/init/vendor.qti.qspmhal@1.0-service.rc
 vendor/etc/seccomp_policy/qspm.policy
@@ -1684,6 +1687,7 @@ system_ext/lib64/libwfduibcsinkinterface.so
 system_ext/lib64/libwfduibcsrc.so
 system_ext/lib64/libwfduibcsrcinterface.so
 system_ext/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so
+system_ext/lib64/vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk.so
 system_ext/priv-app/WfdService/WfdService.apk
 vendor/bin/wfdhdcphalservice
 vendor/bin/wfdvndservice
