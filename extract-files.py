@@ -162,6 +162,8 @@ blob_fixups: blob_fixups_user_type = {
         rb'persist\.vendor\.radio\.poweron_opt',
         rb'persist.vendor.radio.poweron_ign',
     ),
+    'vendor/lib64/libqcodec2_core.so': blob_fixup()
+        .add_needed('libcodec2_shim.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
