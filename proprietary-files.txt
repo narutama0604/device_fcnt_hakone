@@ -141,6 +141,7 @@ vendor/etc/camera/vidhance.lic
 vendor/etc/camera/vidhance_calibration
 
 # Camera
+vendor/bin/f2player
 vendor/bin/hw/vendor.qti.camera.provider@2.7-service_64
 vendor/etc/init/vendor.qti.camera.provider@2.7-service_64.rc
 vendor/lib64/camera.device@1.0-impl.so
