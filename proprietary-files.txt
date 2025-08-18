@@ -1,13 +1,22 @@
 # Device proprietary files - from qssi-user 15 V31RM50D 10636 release-keys, unless pinned
 
 # ACDB
+vendor/etc/acdbdata/AW88261/acdb_cal_aw88261.acdb
+vendor/etc/acdbdata/AW88261/workspaceFileXml_aw88261.qwsp
+vendor/etc/acdbdata/AW88263/acdb_cal_aw88263.acdb
+vendor/etc/acdbdata/AW88263/workspaceFileXml_aw88263.qwsp
 vendor/etc/acdbdata/IDP_UPD/IDP_UPD_acdb_cal.acdb
 vendor/etc/acdbdata/IDP_UPD/IDP_UPD_workspaceFileXml.qwsp
 vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.36_enpu2.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.10.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.36_enpu2_comp.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__2.6.3_0.0__3.0.0_0.0__eai_1.43_enpu2.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.7.20_0.0__3.0.0_0.0__eai_1.36_enpu2.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.7.2_0.0__3.0.0_0.0__eai_1.36_enpu2.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__4.8.1.11_0.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_1.43_enpuv2.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__4.8.13_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_1.43_enpu2.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__4.8.14_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_1.43_enpu2.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__4.8.4_0.0__3.0.0_0.0__eai_1.43_enpu2.pmd
 vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.36_enpu2.pmd
 vendor/etc/acdbdata/parrot_idp/IDP_acdb_cal.acdb
 vendor/etc/acdbdata/parrot_idp/IDP_workspaceFileXml.qwsp
@@ -17,6 +26,12 @@ vendor/etc/acdbdata/parrot_qrd/QRD_acdb_cal.acdb
 vendor/etc/acdbdata/parrot_qrd/QRD_workspaceFileXml.qwsp
 vendor/etc/acdbdata/parrot_qrd_sku1/QRD_parrot_sku1_acdb_cal.acdb
 vendor/etc/acdbdata/parrot_qrd_sku1/QRD_parrot_sku1_workspaceFileXml.qwsp
+vendor/etc/acdbdata/ravelin_idp/IDP_ravelin_acdb_cal.acdb
+vendor/etc/acdbdata/ravelin_idp/IDP_ravelin_workspaceFileXml.qwsp
+vendor/etc/acdbdata/ravelin_idp_wsahac/IDP_wsahac_ravelin_acdb_cal.acdb
+vendor/etc/acdbdata/ravelin_idp_wsahac/IDP_wsahac_ravelin_workspaceFileXml.qwsp
+vendor/etc/acdbdata/ravelin_qrd/QRD_ravelin_acdb_cal.acdb
+vendor/etc/acdbdata/ravelin_qrd/QRD_ravelin_workspaceFileXml.qwsp
 
 # ADSP
 vendor/bin/adsprpcd
