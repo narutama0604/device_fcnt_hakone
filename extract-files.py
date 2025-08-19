@@ -79,12 +79,6 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
-    'vendor/lib64/nfc_nci.nqx.default.hw.so': blob_fixup()
-	.add_needed('libbase_shim.so'),
-    'vendor/etc/libnfc-nxp-pnscr.conf': blob_fixup()
-        .regex_replace(
-	    'NXP_T4T_NFCEE_ENABLE=0x01', 'NXP_T4T_NFCEE_ENABLE=0x00'
-	),
     'system_ext/lib64/libwfdmmsrc_system.so': blob_fixup()
         .add_needed('libgui_shim.so'),
     'system_ext/lib64/libwfdnative.so': blob_fixup()
@@ -95,11 +89,7 @@ blob_fixups: blob_fixups_user_type = {
             'android.media.audio.common.types-V2-cpp.so',
             'android.media.audio.common.types-V4-cpp.so',
         )
-        .add_needed('libaudioclient_shim.so')
-        .replace_needed(
-            'android.hardware.common-V2-ndk_platform.so',
-            'android.hardware.common-V2-ndk.so',
-        ),
+        .add_needed('libaudioclient_shim.so'),
     (
         'vendor/bin/hw/android.hardware.security.keymint-service-qti',
         'vendor/lib64/libqtikeymint.so',
@@ -121,36 +111,14 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed(
             'libgrpc++_unsecure.so', 'libgrpc++_unsecure_prebuilt.so'
         ),
-    'vendor/lib64/hw/fingerprint.fpc.default.so': blob_fixup()
-        .replace_needed(
-            'com.fingerprints.extension@1.0.so', 'com.fingerprints.extension@1.0_vendor.so'
-        ),
-    'vendor/lib64/hw/fingerprint.goodix.default.so': blob_fixup()
-        .fix_soname(),
     'vendor/lib64/libcamximageformatutils.so': blob_fixup()
         .replace_needed(
             'vendor.qti.hardware.display.config-V2-ndk_platform.so', 'vendor.qti.hardware.display.config-V2-ndk.so'
         ),
-    'vendor/lib64/libhme.so': blob_fixup()
-        .replace_needed(
-            'libstdc++.so', 'libstdc++_vendor.so'
-        ),
-    'vendor/lib64/libimp.so': blob_fixup()
-        .replace_needed(
-            'libjnigraphics.so', 'libjnigraphics_prebuilt.so'
-        ),
-    'vendor/lib64/libopencv_java4.so': blob_fixup()
-        .replace_needed(
-            'libjnigraphics.so', 'libjnigraphics_prebuilt.so'
-        ),
     'vendor/etc/media_codecs_ravelin.xml': blob_fixup()
         .regex_replace('.+media_codecs_(google_audio|google_c2|google_telephony|vendor_audio).+\n', ''),
-    'vendor/etc/seccomp_policy/atfwd@2.0.policy': blob_fixup()
-        .add_line_if_missing('gettid: 1'),
     'vendor/etc/seccomp_policy/c2audio.vendor.ext-arm64.policy': blob_fixup()
         .add_line_if_missing('setsockopt: 1'),
-    'vendor/etc/seccomp_policy/wfdhdcphalservice.policy': blob_fixup()
-        .add_line_if_missing('gettid: 1'),
     'vendor/lib64/vendor.libdpmframework.so': blob_fixup()
         .add_needed('libhidlbase_shim.so'),
     'vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.M06.rc': blob_fixup()
