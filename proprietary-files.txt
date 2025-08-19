@@ -319,7 +319,7 @@ vendor/lib64/com.qti.feature2.yuv.so
 vendor/lib64/com.qti.settings.clarence.so
 vendor/lib64/com.qti.settings.netrani.so
 vendor/lib64/com.qti.stats.common.so
-vendor/lib64/libBSTSWAD.so;DISABLE_CHECKELF
+vendor/lib64/libBSTSWAD.so
 vendor/lib64/libBSTHDRDETECT.so
 vendor/lib64/libBSTMultiExpoGainHDR.so
 vendor/lib64/libNvEffectSdkCore.so
