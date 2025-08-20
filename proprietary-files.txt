@@ -154,6 +154,9 @@ vendor/etc/camera/template/info_new.json
 vendor/etc/camera/vidhance.lic
 vendor/etc/camera/vidhance_calibration
 
+# Camera OIS
+vendor/firmware/aw86006.prog
+
 # Camera
 vendor/bin/f2player
 vendor/bin/hw/vendor.qti.camera.provider@2.7-service_64
@@ -319,6 +322,11 @@ vendor/lib64/com.qti.feature2.yuv.so
 vendor/lib64/com.qti.settings.clarence.so
 vendor/lib64/com.qti.settings.netrani.so
 vendor/lib64/com.qti.stats.common.so
+vendor/lib64/com.qualcomm.mcx.distortionmapper.so
+vendor/lib64/com.qualcomm.mcx.linearmapper.so
+vendor/lib64/com.qualcomm.mcx.policy.mfl.so
+vendor/lib64/com.qualcomm.mcx.policy.xr.so
+vendor/lib64/com.qualcomm.qti.mcx.usecase.extension.so
 vendor/lib64/libBSTSWAD.so
 vendor/lib64/libBSTHDRDETECT.so
 vendor/lib64/libBSTMultiExpoGainHDR.so
@@ -355,6 +363,7 @@ vendor/lib64/libchilog.so
 vendor/lib64/libcom.qti.chinodeutils.so
 vendor/lib64/libdepthcomputation.so
 vendor/lib64/libdisplayconfig.qti.so
+vendor/lib64/libeepromcutter.so
 vendor/lib64/libgralloc.qti.so
 vendor/lib64/libhdr10plus.so
 vendor/lib64/libhme.so
@@ -378,12 +387,14 @@ vendor/lib64/libopencv.so
 vendor/lib64/libopencv3a.so
 vendor/lib64/libos.so
 vendor/lib64/libqshcamera.so
+vendor/lib64/libremosaiclib.so
 vendor/lib64/libremosaic_wrapper.so
 vendor/lib64/libspectre.so
 vendor/lib64/libswregistrationalgo.so
 vendor/lib64/libsynx.so
 vendor/lib64/libtfestriping.so
 vendor/lib64/libthreadutils.so
+vendor/lib64/libubifocus.so
 vendor/lib64/libvidhance.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 vendor/lib64/vendor.qti.hardware.sigma_miracast@1.0.so
