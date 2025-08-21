@@ -108,21 +108,6 @@ vendor/lib64/soundfx/libldnhncr.so
 vendor/lib64/soundfx/libreverbwrapper.so
 vendor/lib64/soundfx/libvisualizer.so
 
-# Audio configs
-vendor/etc/audio/sku_parrot/audio_effects.conf
-vendor/etc/audio/sku_parrot/mixer_paths_parrot_idp.xml
-vendor/etc/audio/sku_parrot/mixer_paths_parrot_idp_sku1.xml
-vendor/etc/audio/sku_parrot/mixer_paths_parrot_qrd.xml
-vendor/etc/audio/sku_parrot/mixer_paths_parrot_qrd_sku1.xml
-vendor/etc/audio/sku_parrot/resourcemanager_parrot_idp.xml
-vendor/etc/audio/sku_parrot/resourcemanager_parrot_idp_sku1.xml
-vendor/etc/audio/sku_parrot/resourcemanager_parrot_qrd.xml
-vendor/etc/audio/sku_parrot/resourcemanager_parrot_qrd_sku1.xml
-vendor/etc/audio/sku_parrot/resourcemanager_upd.xml
-vendor/etc/default_volume_tables.xml
-vendor/etc/microphone_characteristics.xml
-vendor/etc/usecaseKvManager.xml
-
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
@@ -957,8 +942,6 @@ vendor/etc/seccomp_policy/codec2.vendor.base-arm64.policy
 vendor/etc/seccomp_policy/codec2.vendor.ext-arm64.policy
 vendor/etc/vintf/manifest/c2_manifest_vendor.xml
 vendor/etc/vintf/manifest/c2_manifest_vendor_audio.xml
-vendor/etc/backend_conf.xml
-vendor/etc/card-defs.xml
 vendor/etc/media_codecs.xml
 vendor/etc/media_codecs_c2_audio.xml
 vendor/etc/media_codecs_parrot_v0.xml
