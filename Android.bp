@@ -14,6 +14,13 @@ soong_namespace {
     ],
 }
 
+install_symlink {
+    name: "firmware_aw_cali.bin_symlink",
+    vendor: true,
+    installed_location: "firmware/aw_cali.bin",
+    symlink_target: "/mnt/vendor/persist/factory/audio/aw_cali.bin",
+}
+
 // Wi-Fi firmware symlinks
 install_symlink {
     name: "firmware_qca6750_wlan_mac.bin_symlink",

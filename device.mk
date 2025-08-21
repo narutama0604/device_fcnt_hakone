@@ -87,6 +87,9 @@ PRODUCT_PACKAGES += \
     libsndcardparser:64 \
     libvolumelistener:64
 
+PRODUCT_PACKAGES += \
+    firmware_aw_cali.bin_symlink
+
 AUDIO_HAL_DIR := hardware/qcom-caf/sm8450/audio/primary-hal
 
 PRODUCT_COPY_FILES += \
