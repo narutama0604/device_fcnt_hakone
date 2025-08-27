@@ -1,0 +1,9 @@
+cc_library_shared {
+    name: "libaudioclient_shim.M06",
+    shared_libs: ["libaudioclient", "libutils", "liblog"],
+    header_libs: ["libmedia_headers"],
+    srcs: [
+        "libaudioclient/AudioSystem.cpp",
+    ],
+    vendor: true,
+}

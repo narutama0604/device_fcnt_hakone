@@ -89,7 +89,7 @@ blob_fixups: blob_fixups_user_type = {
             'android.media.audio.common.types-V2-cpp.so',
             'android.media.audio.common.types-V4-cpp.so',
         )
-        .add_needed('libaudioclient_shim.so'),
+        .add_needed('libaudioclient_shim.M06.so'),
     (
         'vendor/bin/hw/android.hardware.security.keymint-service-qti',
         'vendor/lib64/libqtikeymint.so',
