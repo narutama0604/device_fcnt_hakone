@@ -12,8 +12,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 # Configure full_base_telephony.mk
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit common 2by2 configurations
-$(call inherit-product, vendor/2by2/config/common_full_phone.mk)
+# Inherit common Lineage configurations
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit device configurations
 $(call inherit-product, $(DEVICE_PATH)/device.mk)
@@ -23,12 +23,10 @@ $(call inherit-product, vendor/fcnt/M06/M06-vendor.mk)
 
 ## Device identifier
 PRODUCT_DEVICE := M06
-PRODUCT_NAME := M06
+PRODUCT_NAME := lineage_M06
 PRODUCT_BRAND := FCNT
 PRODUCT_MODEL := M06
 PRODUCT_MANUFACTURER := FCNT
-
-CUSTOM_PROCESSOR_INFO := Qualcomm Snapdragon 7s Gen 2
 
 # GMS
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
