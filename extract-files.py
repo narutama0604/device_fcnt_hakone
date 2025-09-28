@@ -121,8 +121,11 @@ blob_fixups: blob_fixups_user_type = {
         .add_line_if_missing('setsockopt: 1'),
     'vendor/lib64/vendor.libdpmframework.so': blob_fixup()
         .add_needed('libhidlbase_shim.so'),
-    'vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.M06.rc': blob_fixup()
-        .regex_replace('@2.1-service\n', '@2.1-service.M06\n'),
+    'vendor/bin/hw/android.hardware.biometrics.fingerprint-service.example.M06': blob_fixup()
+        .replace_needed('android.hardware.biometrics.fingerprint-V1-ndk_platform.so', 'android.hardware.biometrics.fingerprint-V1-ndk.so')
+        .replace_needed('android.hardware.biometrics.common-V1-ndk_platform.so', 'android.hardware.biometrics.common-V1-ndk.so'),
+    'vendor/etc/init/fingerprint-default.M06.rc': blob_fixup()
+        .regex_replace('fingerprint-service.example\n', 'fingerprint-service.example.M06\n'),
     (
         'vendor/lib64/libqcrilNr.so',
         'vendor/lib64/libril-db.so',

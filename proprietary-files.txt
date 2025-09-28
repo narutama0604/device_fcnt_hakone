@@ -727,13 +727,12 @@ product/app/MobileFeliCaClient/MobileFeliCaClient.apk;PRESIGNED
 # Fingerprint
 system_ext/etc/permissions/com.fingerprints.extension.xml
 system_ext/framework/com.fingerprints.extension.jar
+vendor/bin/hw/android.hardware.biometrics.fingerprint-service.example:vendor/bin/hw/android.hardware.biometrics.fingerprint-service.example.M06
+vendor/etc/init/fingerprint-default.rc:vendor/etc/init/fingerprint-default.M06.rc
+vendor/etc/permissions/qti_fingerprint_interface.xml
+vendor/etc/vintf/manifest/fingerprint-default.xml:vendor/etc/vintf/manifest/fingerprint-default.M06.xml
 vendor/lib64/hw/fingerprint.fpc.default.so
-vendor/lib64/android.hardware.biometrics.common-V1-ndk_platform.so
-vendor/lib64/android.hardware.biometrics.fingerprint-V1-ndk_platform.so;DISABLE_CHECKELF
-
-# Fingerprint - from itc
-vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service:vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service.M06|37f80fa953d86631f71513c0a9f865cd6f3846b3
-vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc:vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.M06.rc|7f5fd3ac633e7458feaaed0c0e524782ddda26f3
+vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 
 # FM
 system/lib64/vendor.qti.hardware.fm-V1-ndk.so
