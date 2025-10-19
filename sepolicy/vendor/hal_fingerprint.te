@@ -1,4 +1,4 @@
-type vendor_hal_fingerprint_hwservice_fcnt, service_manager_type;
+type hal_fingerprint_test_service, hal_service_type, protected_service, service_manager_type;
 
 allow hal_fingerprint_default dmabuf_system_heap_device:chr_file r_file_perms;
 allow hal_fingerprint_default input_device:chr_file rwx_file_perms;
@@ -12,7 +12,7 @@ allow hal_fingerprint_default vendor_dmabuf_secure_cdsp_heap_device:chr_file { i
 allow hal_fingerprint_default vendor_fingerprint_data_file:dir create_dir_perms;
 allow hal_fingerprint_default vendor_fingerprint_data_file:file create_file_perms;
 allow hal_fingerprint_default vendor_fingerprint_device:chr_file rwx_file_perms;
-allow hal_fingerprint_default vendor_hal_fingerprint_hwservice_fcnt:service_manager { add find };
+allow hal_fingerprint_default hal_fingerprint_test_service:service_manager { add find };
 allow hal_fingerprint_default vendor_hal_perf_default:binder call;
 allow hal_fingerprint_default vendor_hal_perf_hwservice:hwservice_manager find;
 allow hal_fingerprint_default vendor_sysfs_graphics:dir r_dir_perms;

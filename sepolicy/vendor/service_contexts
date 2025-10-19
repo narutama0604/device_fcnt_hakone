@@ -1,2 +1,2 @@
-com.fingerprints.fpc.extension.IFpcExtension/default                        u:object_r:vendor_hal_fingerprint_hwservice_fcnt:s0
+com.fingerprints.fpc.extension.IFpcExtension/default                        u:object_r:hal_fingerprint_test_service:s0
 vendor.qti.ims.factoryaidlservice.IImsFactory/default                       u:object_r:vendor_hal_factory_aidlservice:s0
