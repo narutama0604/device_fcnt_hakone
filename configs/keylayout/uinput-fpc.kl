@@ -26,3 +26,7 @@ key 106   BUTTON_C VIRTUAL
 
 # Keymap between kernel and framework.
 # Refer to input-event-codes.h(kernel) and KeyEvent.java(framework) for more details.
+
+# add FCNT exlider keys
+key 317   BUTTON_THUMBL
+key 318   BUTTON_THUMBR
