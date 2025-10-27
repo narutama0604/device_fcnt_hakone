@@ -874,6 +874,7 @@ vendor/lib/hw/vulkan.adreno.so
 vendor/lib64/hw/vulkan.adreno.so
 
 # Health Care
+odm/lib64/libledpulsehal.so
 product/priv-app/FjHealthcareApp/FjHealthcareApp.apk
 
 # Ims
