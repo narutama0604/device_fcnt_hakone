@@ -873,6 +873,9 @@ vendor/firmware/gmu_gen70000.bin
 vendor/lib/hw/vulkan.adreno.so
 vendor/lib64/hw/vulkan.adreno.so
 
+# Health Care
+product/priv-app/FjHealthcareApp/FjHealthcareApp.apk
+
 # Ims
 system_ext/etc/permissions/vendor.qti.imsdcservice.xml
 system_ext/framework/vendor.qti.ims.callcapability-V1.0-java.jar
