@@ -34,6 +34,6 @@ CUSTOM_PROCESSOR_INFO := Qualcomm Snapdragon 7s Gen 2
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="qssi-user 15 V31RM50D 10636 release-keys" \
-    BuildFingerprint=FCNT/M06/M06:15/V31RM50D/M06.20250711:user/release-keys \
+    BuildDesc="qssi-user 15 V32RM51D 11190 release-keys" \
+    BuildFingerprint=FCNT/M06/M06:15/V32RM51D/M06.20251006:user/release-keys \
     DeviceProduct=M06
