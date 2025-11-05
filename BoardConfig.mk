@@ -158,6 +158,8 @@ BOARD_SUPER_PARTITION_GROUPS := fcnt_dynamic_partitions
 BOARD_FCNT_DYNAMIC_PARTITIONS_PARTITION_LIST := odm product system system_ext vendor vendor_dlkm
 BOARD_FCNT_DYNAMIC_PARTITIONS_SIZE := 10196353024
 
+-include vendor/lineage/config/BoardConfigReservedSize.mk
+
 BOARD_ODMIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_PRODUCTIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE := ext4
