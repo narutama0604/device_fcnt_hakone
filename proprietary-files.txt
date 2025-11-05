@@ -78,6 +78,7 @@ vendor/etc/models/acd/music.eai
 vendor/etc/models/acd/speech.eai
 vendor/lib64/hw/audio.primary.parrot.so;DISABLE_CHECKELF
 vendor/lib64/libadm.so
+vendor/lib64/libagmmixer.so
 vendor/lib64/libar-acdb.so;DISABLE_CHECKELF;MAKE_COPY_RULE_ONLY
 vendor/lib64/libar-gpr.so;DISABLE_CHECKELF;MAKE_COPY_RULE_ONLY
 vendor/lib64/libar-gsl.so;DISABLE_CHECKELF;MAKE_COPY_RULE_ONLY
