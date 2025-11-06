@@ -714,6 +714,7 @@ vendor/lib64/vendor.qti.esepowermanager@1.0.so
 vendor/lib64/vendor.qti.esepowermanager@1.1.so
 
 # eUICC
+product/etc/permissions/privapp-permissions-google-product.xml
 product/etc/sysconfig/euicc.xml
 product/priv-app/EuiccGoogle_arm64/EuiccGoogle_arm64.apk;PRESIGNED
 
@@ -876,6 +877,7 @@ vendor/lib64/hw/vulkan.adreno.so
 
 # Health Care
 odm/lib64/libledpulsehal.so
+product/etc/permissions/privapp-permissions-oem-product.xml
 product/priv-app/FjHealthcareApp/FjHealthcareApp.apk
 
 # Ims
