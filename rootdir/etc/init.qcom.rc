@@ -1006,3 +1006,14 @@ service vendor.power /vendor/bin/hw/android.hardware.power-service-qti
     class hal
     user system
     group system input
+
+on post-fs
+    start logger
+
+on property:sys.boot_completed=1
+    stop logger
+
+service logger /system/bin/logcat -b all -D -f /metadata/boot_log.txt
+    class main
+    user root
+    group root system
