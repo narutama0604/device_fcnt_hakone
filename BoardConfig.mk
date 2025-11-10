@@ -136,6 +136,18 @@ BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(KERNEL_PATH)/vendor-mo
 BOARD_VENDOR_KERNEL_MODULES := $(addprefix $(KERNEL_PATH)/vendor-modules/, $(BOARD_VENDOR_KERNEL_MODULES_LOAD))
 BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE :=  $(KERNEL_PATH)/vendor-modules/modules.blocklist
 
+# Recovery battery modules (from vendor_dlkm)
+RECOVERY_KERNEL_MODULES := \
+    spf_core_dlkm \
+    gpr_dlkm \
+    snd_event_dlkm \
+    q6_notifier_dlkm \
+    q6_pdr_dlkm \
+    adsp_loader_dlkm
+
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES += $(addprefix $(DEVICE_PATH)-kernel/vendor-modules/,$(addsuffix .ko,$(RECOVERY_KERNEL_MODULES)))
+BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD += $(RECOVERY_KERNEL_MODULES)
+
 # Malloc
 MALLOC_SVELTE := true
 
