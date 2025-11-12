@@ -412,6 +412,9 @@ vendor/firmware/CAMERA_ICP.mbn
 vendor/firmware/CAMERA_ICP.mdt
 vendor/firmware/CAMERA_ICP_170.elf
 
+# Charger
+system/bin/charger
+
 # Computer vision firmware
 vendor/firmware/evass-lt-21.b00
 vendor/firmware/evass-lt-21.b01
