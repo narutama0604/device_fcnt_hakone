@@ -142,6 +142,8 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('AHardwareBuffer_lockPlanes')
         .clear_symbol_version('AHardwareBuffer_release')
         .clear_symbol_version('AHardwareBuffer_unlock'),
+    'system_ext/priv-app/QtiTelephony/QtiTelephony.apk': blob_fixup()
+        .apktool_patch('qtitelephony-patches'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
