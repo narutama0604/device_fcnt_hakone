@@ -344,8 +344,6 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.deprecated@1.0.vendor:64
 
 PRODUCT_PACKAGES += \
-    Ims \
-    QtiTelephony \
     librmnetctl
 
 # Rootdir
