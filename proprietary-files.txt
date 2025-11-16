@@ -717,7 +717,7 @@ vendor/lib64/vendor.qti.esepowermanager@1.0.so
 vendor/lib64/vendor.qti.esepowermanager@1.1.so
 
 # eUICC
-product/etc/permissions/privapp-permissions-google-product.xml
+product/etc/permissions/privapp-permissions-google-product.xml:product/etc/permissions/privapp-permissions-google-product-lineage.xml
 product/etc/sysconfig/euicc.xml
 product/priv-app/EuiccGoogle_arm64/EuiccGoogle_arm64.apk;PRESIGNED
 
