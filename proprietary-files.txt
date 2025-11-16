@@ -881,7 +881,7 @@ vendor/lib64/hw/vulkan.adreno.so
 # Health Care
 odm/lib64/libledpulsehal.so
 product/etc/permissions/privapp-permissions-oem-product.xml
-product/priv-app/FjHealthcareApp/FjHealthcareApp.apk
+product/priv-app/FjHealthcareApp/FjHealthcareApp.apk;PRESIGNED
 
 # Ims
 system_ext/etc/permissions/vendor.qti.imsdcservice.xml
