@@ -32,6 +32,6 @@ PRODUCT_MANUFACTURER := FCNT
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="qssi-user 15 V32RM51D 11190 release-keys" \
-    BuildFingerprint=FCNT/M06/M06:15/V32RM51D/M06.20251006:user/release-keys \
+    BuildDesc="qssi-user 15 V33RM52D 11554 release-keys" \
+    BuildFingerprint=FCNT/M06/M06:15/V33RM52D/M06.20251030:user/release-keys \
     DeviceProduct=M06

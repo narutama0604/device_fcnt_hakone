@@ -1,4 +1,4 @@
-# Device proprietary files - from qssi-user 15 V32RM51D 11190 release-keys, unless pinned
+# Device proprietary files - from qssi-user 15 V33RM52D 11554 release-keys, unless pinned
 
 # ACDB
 vendor/etc/acdbdata/AW88261/acdb_cal_aw88261.acdb
