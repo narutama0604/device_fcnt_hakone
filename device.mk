@@ -510,6 +510,8 @@ PRODUCT_PACKAGES += \
     wpa_supplicant \
     wpa_supplicant.conf
 
+FORCE_USE_ANDROIDMK_FOR_WPA_CONF := true
+
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/qca6750/WCNSS_qcom_cfg.ini
 
