@@ -370,7 +370,7 @@ PRODUCT_COPY_FILES += \
 
 # RRO Overlays
 PRODUCT_PACKAGES += \
-    CarrierConfig \
+    CarrierConfigOverlay \
     EuiccGoogleOverlayM06 \
     FrameworksResCommon \
     FrameworksResTarget \
