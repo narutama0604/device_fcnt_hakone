@@ -1,8 +1,6 @@
 vendor.qti.ims.factory::IImsFactory                          u:object_r:vendor_hal_imsfactory_hwservice:s0
 vendor.fcnt.hardware.campostproc::IMiPostProcService       u:object_r:vendor_hal_camerapostproc_fcnt_hwservice:s0
-vendor.fcnt.hardware.displayfeature::IDisplayFeature       u:object_r:vendor_hal_displayfeature_fcnt_hwservice:s0
 vendor.qti.sla.service::ISlaService                          u:object_r:hal_slaservice_hwservice:s0
-vendor.fcnt.sensor.citsensorservice::ICitSensorService   u:object_r:vendor_hal_citsensorservice_fcnt_hwservice:s0
 vendor.fcnt.sensor.communicate::ISensorCommunicate  u:object_r:vendor_hal_sensorcommunicate_hwservice:s0
 vendor.fcnt.hardware.quickcamera::IQuickCameraService    u:object_r:hal_quickcamera_hwservice:s0
 vendor.dolby.hardware.dms::IDms          u:object_r:hal_dms_hwservice:s0
