@@ -9,7 +9,6 @@ soong_namespace {
         "hardware/google/interfaces",
         "hardware/google/pixel",
         "hardware/qcom-caf/bootctrl",
-        "hardware/qcom-caf/common/fwk-detect",
         "vendor/qcom/opensource/commonsys-intf/display",
     ],
 }
