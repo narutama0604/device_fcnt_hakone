@@ -326,10 +326,6 @@ include $(DEVICE_PATH)/configs/properties/default.mk
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-3.9.1-vendorcompat
 
-# QMI
-PRODUCT_PACKAGES += \
-    libvndfwk_detect_jni.qti_vendor:64 # Needed by CNE app
-
 # QTI
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.systemhelper@1.0.vendor:64
