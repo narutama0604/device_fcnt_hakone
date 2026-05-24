@@ -57,7 +57,6 @@ lib_fixups: lib_fixups_user_type = {
         'libagmclient',
         'libagmmixer',
         'libmisight',
-        'libsndcardparser',
         'libar-acdb',
         'libar-gpr',
         'libar-gsl',
