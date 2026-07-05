@@ -183,7 +183,7 @@ PRODUCT_PACKAGES += \
     fastbootd
 
 # FCNTParts
-include packages/apps/FCNTParts/device.mk
+-include packages/apps/FCNTParts/device.mk
 
 # Fingerprint
 PRODUCT_COPY_FILES += \
