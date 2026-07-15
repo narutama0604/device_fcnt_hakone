@@ -106,14 +106,12 @@ BOARD_RAMDISK_USE_LZ4 := true
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_USES_GENERIC_KERNEL_IMAGE := true
 
-# Kill lineage kernel build task while preserving kernel
-TARGET_NO_KERNEL_OVERRIDE := true
-
 # Kernel Source
 TARGET_KERNEL_SOURCE := kernel/fcnt/sm7435
 TARGET_KERNEL_CONFIG := \
     gki_defconfig \
-    vendor/parrot_GKI.config
+    vendor/parrot_GKI.config \
+    vendor/fcnt/M06.config
 
 TARGET_KERNEL_EXT_MODULE_ROOT := kernel/fcnt/sm7435-modules
 
@@ -121,7 +119,6 @@ TARGET_KERNEL_EXT_MODULES := \
     qcom/opensource/mmrm-driver \
     qcom/opensource/audio-kernel \
     qcom/opensource/camera-kernel \
-    qcom/opensource/cvp-kernel \
     qcom/opensource/dataipa/drivers/platform/msm \
     qcom/opensource/datarmnet/core \
     qcom/opensource/datarmnet-ext/aps \
@@ -132,45 +129,41 @@ TARGET_KERNEL_EXT_MODULES := \
     qcom/opensource/datarmnet-ext/sch \
     qcom/opensource/datarmnet-ext/wlan \
     qcom/opensource/display-drivers/msm \
-    qcom/opensource/eva-kernel \
     qcom/opensource/video-driver \
     qcom/opensource/wlan/qcacld-3.0/.adrastea \
+    qcom/opensource/wlan/qcacld-3.0/.qca6490 \
     qcom/opensource/wlan/qcacld-3.0/.qca6750
+
+TARGET_KERNEL_EXT_MODULES += \
+    motorola/drivers/moto_mm \
+    motorola/drivers/moto_mmap_fault \
+    motorola/drivers/moto_swap \
+    motorola/drivers/ese/st54spi_gpio
+
+TARGET_KERNEL_EXT_MODULES += \
+    fcnt/huaqinhardware_info \
+    fcnt/ledpulse \
+    fcnt/redriver \
+    fcnt/focaltech_touch \
+    fcnt/fpc \
+    fcnt/qns_system
+
+TARGET_KERNEL_ADDITIONAL_FLAGS += \
+    CONFIG_HYBRIDSWAP_ZRAM=y \
+    CONFIG_HYBRIDSWAP=y \
+    CONFIG_HYBRIDSWAP_SWAPD=y \
+    CONFIG_HYBRIDSWAP_CORE=y
 
 # Kernel Binary
 TARGET_KERNEL_VERSION := 5.10
-LOCAL_KERNEL := $(KERNEL_PATH)/kernel
-PRODUCT_COPY_FILES += \
-	$(LOCAL_KERNEL):kernel
 
 # Kernel modules
-BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat $(KERNEL_PATH)/ramdisk-modules/modules.load))
-BOARD_VENDOR_RAMDISK_KERNEL_MODULES := $(addprefix $(KERNEL_PATH)/ramdisk-modules/, $(BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD))
-BOARD_VENDOR_RAMDISK_KERNEL_MODULES_BLOCKLIST_FILE := $(KERNEL_PATH)/ramdisk-modules/modules.blocklist
-
-# Also add recovery modules to vendor ramdisk
-BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(KERNEL_PATH)/ramdisk-modules/modules.load.recovery))
-RECOVERY_MODULES := $(addprefix $(KERNEL_PATH)/ramdisk-modules/, $(BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD))
-
-# Prevent duplicated entries (to solve duplicated build rules problem)
-BOARD_VENDOR_RAMDISK_KERNEL_MODULES := $(sort $(BOARD_VENDOR_RAMDISK_KERNEL_MODULES) $(RECOVERY_MODULES))
-
-# Vendor modules (installed to vendor_dlkm)
-BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(KERNEL_PATH)/vendor-modules/modules.load))
-BOARD_VENDOR_KERNEL_MODULES := $(addprefix $(KERNEL_PATH)/vendor-modules/, $(BOARD_VENDOR_KERNEL_MODULES_LOAD))
-BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE :=  $(KERNEL_PATH)/vendor-modules/modules.blocklist
-
-# Recovery battery modules (from vendor_dlkm)
-RECOVERY_KERNEL_MODULES := \
-    spf_core_dlkm \
-    gpr_dlkm \
-    snd_event_dlkm \
-    q6_notifier_dlkm \
-    q6_pdr_dlkm \
-    adsp_loader_dlkm
-
-BOARD_VENDOR_RAMDISK_KERNEL_MODULES += $(addprefix $(DEVICE_PATH)-kernel/vendor-modules/,$(addsuffix .ko,$(RECOVERY_KERNEL_MODULES)))
-BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD += $(RECOVERY_KERNEL_MODULES)
+BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/kernel/modules.load))
+BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE := $(TARGET_KERNEL_SOURCE)/modules.vendor_blocklist.msm.parrot
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/kernel/modules.load.vendor_boot))
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES_BLOCKLIST_FILE := $(TARGET_KERNEL_SOURCE)/modules.vendor_blocklist.msm.parrot
+BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/kernel/modules.load.recovery))
+BOOT_KERNEL_MODULES := $(BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD)
 
 # Malloc
 MALLOC_SVELTE := true
