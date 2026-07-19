@@ -1,0 +1,9 @@
+on init
+    # Glove Mode
+    chown system system /proc/goodix_ts.0/glove_type
+    chmod 0660 /proc/goodix_ts.0/glove_type
+
+service vendor.touch-hal /vendor/bin/hw/vendor.lineage.touch-service.M06
+    class hal
+    user system
+    group system
