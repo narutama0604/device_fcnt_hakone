@@ -78,7 +78,6 @@ PRODUCT_PACKAGES += \
     libagm_pcm_plugin:64 \
     libagmclient:64 \
     libats:64 \
-    libbatterylistener:64 \
     libpalclient:64 \
     libqcompostprocbundle:64 \
     libqcomvisualizer:64 \
