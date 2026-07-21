@@ -176,6 +176,15 @@ blob_fixups: blob_fixups_user_type = {
     ): blob_fixup().replace_needed(
         'libtinyxml2.so', 'libtinyxml2-v34.so'
     ),
+    'vendor/lib64/camera/components/com.qti.node.thirdpartyalgo.so': blob_fixup()
+        .binary_regex_replace(
+            rb'\x1f\xc0\x01\xf8\xa1\x4c\x00\x54\x68\x06\x40\xf9',
+            b'\x1f\xc0\x01\xf8\x65\x02\x00\x14\x68\x06\x40\xf9',
+        )
+        .binary_regex_replace(
+            rb'\x40\x79\x8a\xd2\x80\x43\xb2\xf2\x80\x78\xd6\xf2\xa0\x08\xf0\xf2\x4d\x45\x00\x94\x97\xfd\xff\x17',
+            b'\x9f\xfe\x06\xa9\x9f\xfe\x07\xa9\x9f\x46\x00\xf9\x99\xfd\xff\x17\x1f\x20\x03\xd5\x1f\x20\x03\xd5',
+        ),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
