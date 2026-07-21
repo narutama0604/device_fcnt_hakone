@@ -883,6 +883,12 @@ odm/lib64/libledpulsehal.so
 product/etc/permissions/privapp-permissions-oem-product.xml
 product/priv-app/FjHealthcareApp/FjHealthcareApp.apk;PRESIGNED
 
+# HotwordEnrollment
+product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk
+product/priv-app/HotwordEnrollmentYGoogleHEXAGON_WIDEBAND/HotwordEnrollmentYGoogleHEXAGON_WIDEBAND.apk
+system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
+system_ext/framework/com.android.hotwordenrollment.common.util.jar
+
 # Ims
 system_ext/etc/permissions/vendor.qti.imsdcservice.xml
 system_ext/lib64/vendor.qti.ImsRtpService-V1-ndk.so
