@@ -1,0 +1,1 @@
+allow system_server isolated_compute_app:unix_stream_socket { getopt };
