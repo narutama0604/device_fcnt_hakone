@@ -141,8 +141,6 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('AHardwareBuffer_lockPlanes')
         .clear_symbol_version('AHardwareBuffer_release')
         .clear_symbol_version('AHardwareBuffer_unlock'),
-    'system_ext/priv-app/QtiTelephony/QtiTelephony.apk': blob_fixup()
-        .apktool_patch('qtitelephony-patches'),
     'vendor/bin/hw/android.hardware.sensors@2.1-service.multihal': blob_fixup()
         .add_needed('libbase_shim.so'),
     'system_ext/lib64/vendor.qti.hardware.qccsyshal@1.2-halimpl.so': blob_fixup()
