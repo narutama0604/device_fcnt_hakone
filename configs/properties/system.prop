@@ -59,12 +59,8 @@ ro.vendor.qti.va_aosp.support=1
 DEVICE_PROVISIONED=1
 persist.vendor.data.mode=concurrent
 ril.subscription.types=NV,RUIM
-ro.telephony.default_network=33,33
+ro.telephony.default_network=26
 telephony.lteOnCdmaDevice=1
-
-# Radio VoNR Calling
-persist.radio.is_vonr_enabled_0=true
-persist.radio.is_vonr_enabled_1=true
 
 # Recovery
 ro.recovery.ui.blank_unblank_on_init=true

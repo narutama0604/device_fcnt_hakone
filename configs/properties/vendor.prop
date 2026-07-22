@@ -206,7 +206,7 @@ vendor.display.use_smooth_motion=1
 # DPM
 persist.vendor.dpm.vndr.idletimer.mode=default
 persist.vendor.dpm.vndr.halservice.enable=1
-persist.vendor.dpm.vndr.feature=1
+persist.vendor.dpm.vndr.feature=11
 
 # DRM
 drm.service.enabled=true
@@ -292,9 +292,7 @@ ro.vendor.qspm.enable=true
 
 # Radio
 persist.radio.multisim.config=dsds
-persist.vendor.radio.dynamic_sar=1
 persist.vendor.radio.apm_sim_not_pwdn=1
-persist.vendor.radio.add_power_save=1
 persist.vendor.radio.sib16_support=1
 persist.vendor.radio.custom_ecc=1
 persist.vendor.radio.procedure_bytes=SKIP
