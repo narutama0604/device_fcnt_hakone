@@ -44,6 +44,10 @@
                  android:exported="true">
         </service>
 
+        <service android:name=".AodStatusService"
+                 android:exported="false">
+        </service>
+
         <activity
             android:name=".DozeSettingsActivity"
             android:exported="false"

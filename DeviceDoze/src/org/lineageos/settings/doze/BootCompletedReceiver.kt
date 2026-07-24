@@ -13,6 +13,10 @@ import android.util.Log
 class BootCompletedReceiver : BroadcastReceiver() {
     override fun onReceive(context: Context, intent: Intent) {
         Log.d(TAG, "Starting")
+        context.startServiceAsUser(
+            Intent(context, AodStatusService::class.java),
+            android.os.UserHandle.CURRENT,
+        )
         Utils.checkDozeService(context)
     }
 
