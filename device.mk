@@ -374,6 +374,7 @@ PRODUCT_PACKAGES += \
     SettingsProviderResTarget \
     SettingsResCommon \
     SystemUIResCommon \
+    TelecommResCommon \
     TelephonyResCommon \
     WifiResCommon \
     WifiResTarget
