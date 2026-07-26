@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+    Copyright (C) 2026 The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- The font size for the clock in the status bar. -->
+    <dimen name="status_bar_clock_size">15.0dip</dimen>
+
+    <!-- End padding for left-aligned status bar clock -->
+    <dimen name="status_bar_left_clock_end_padding">0.0dip</dimen>
+
+    <!-- Size of the view that contains the network type. Should be equal to
+        status_bar_mobile_type_size + 2, to account for 1sp top and bottom padding
+        Note: can be removed once new_status_bar_icons is rolled out -->
+    <dimen name="status_bar_mobile_container_height">18.0dip</dimen>
+
+    <!-- Size of the view displaying the mobile inout icon in the status bar. -->
+    <dimen name="status_bar_mobile_inout_container_size">17.0dip</dimen>
+
+    <!-- Size of the view displaying the mobile roam icon in the status bar. This value should
+        match the viewport size of drawable stat_sys_roaming -->
+    <dimen name="status_bar_mobile_roam_size">8.0dip</dimen>
+
+    <!-- Size of the view displaying the mobile signal icon in the status bar. This value should
+        match the core/status_bar_system_icon_size and change to sp unit -->
+    <dimen name="status_bar_mobile_signal_size">15.0dip</dimen>
+
+    <!-- Size of the view displaying the mobile signal icon in the status bar. This value should
+        match the core/status_bar_system_icon_size and change to sp unit -->
+    <dimen name="status_bar_mobile_type_size">16.0dip</dimen>
+
+    <!-- the padding on the end of the statusbar -->
+    <dimen name="status_bar_padding_end">0.0dip</dimen>
+
+    <!-- the padding on the top of the statusbar (usually 0) -->
+    <dimen name="status_bar_padding_top">8.0dip</dimen>
+</resources>
