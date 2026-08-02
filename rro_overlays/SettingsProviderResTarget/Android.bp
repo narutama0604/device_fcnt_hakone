@@ -5,5 +5,5 @@
 
 runtime_resource_overlay {
     name: "SettingsProviderResTarget",
-    product_specific: true,
+    vendor: true,
 }
