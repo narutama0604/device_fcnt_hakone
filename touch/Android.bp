@@ -13,9 +13,9 @@
 // limitations under the License.
 
 cc_binary {
-    name: "vendor.lineage.touch-service.M06",
-    init_rc: ["vendor.lineage.touch-service.M06.rc"],
-    vintf_fragments: ["vendor.lineage.touch-service.M06.xml"],
+    name: "vendor.lineage.touch-service.hakone",
+    init_rc: ["vendor.lineage.touch-service.hakone.rc"],
+    vintf_fragments: ["vendor.lineage.touch-service.hakone.xml"],
     relative_install_path: "hw",
     vendor: true,
     srcs: [

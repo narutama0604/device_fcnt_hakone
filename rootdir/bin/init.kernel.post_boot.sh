@@ -162,7 +162,7 @@ case "$platformid" in
 esac
 
 ProductName=`getprop ro.product.name`
-if [ "$ProductName" == "M06" ] || [ "$ProductName" == "river" ] ; then
+if [ "$ProductName" == "hakone" ] || [ "$ProductName" == "river" ] ; then
 	echo 160 > /proc/sys/vm/swappiness
 	sleep 600
 	echo 60 > /proc/sys/vm/watermark_scale_factor

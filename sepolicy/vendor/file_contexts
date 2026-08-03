@@ -78,7 +78,7 @@
 /dev/ir_spi u:object_r:ir_spi_device:s0
 
 # Init
-/vendor/bin/init\.M06\.perf\.sh                                        u:object_r:vendor_qti_init_shell_exec:s0
+/vendor/bin/init\.hakone\.perf\.sh                                        u:object_r:vendor_qti_init_shell_exec:s0
 
 # Mac Address
 /data/vendor/mac_addr(/.*)? u:object_r:vendor_mac_vendor_data_file:s0
@@ -119,7 +119,7 @@
 /sys/devices/virtual/thermal/thermal_message/wifi_limit u:object_r:sys_thermal_wifi_limit:s0
 
 # Touch HAL
-/vendor/bin/hw/vendor\.lineage\.touch-service\.M06                  u:object_r:hal_lineage_touch_default_exec:s0
+/vendor/bin/hw/vendor\.lineage\.touch-service\.hakone                  u:object_r:hal_lineage_touch_default_exec:s0
 
 # Touchfeature
 /dev/fcnt-touch u:object_r:touchfeature_device:s0

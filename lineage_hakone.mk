@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/fcnt/M06
+DEVICE_PATH := device/fcnt/hakone
 
 # Configure core_64_bit.mk
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
@@ -19,15 +19,15 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 $(call inherit-product, $(DEVICE_PATH)/device.mk)
 
 # Inherit from the proprietary version
-$(call inherit-product, vendor/fcnt/M06/M06-vendor.mk)
+$(call inherit-product, vendor/fcnt/hakone/hakone-vendor.mk)
 
 # 2by2 stuff
 PROCESSOR_INFO := Qualcomm Snapdragon 7s Gen 2
 WITAQUA_MAINTAINER := kailua
 
 ## Device identifier
-PRODUCT_DEVICE := M06
-PRODUCT_NAME := lineage_M06
+PRODUCT_DEVICE := hakone
+PRODUCT_NAME := lineage_hakone
 PRODUCT_BRAND := FCNT
 PRODUCT_MODEL := M06
 PRODUCT_MANUFACTURER := FCNT

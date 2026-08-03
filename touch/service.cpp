@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "vendor.lineage.touch-service.M06"
+#define LOG_TAG "vendor.lineage.touch-service.hakone"
 
 #include "GloveMode.h"
 

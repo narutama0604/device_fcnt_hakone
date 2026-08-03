@@ -4,6 +4,6 @@
 //
 
 runtime_resource_overlay {
-    name: "EuiccGoogleOverlayM06",
+    name: "EuiccGoogleOverlayHakone",
     vendor: true,
 }

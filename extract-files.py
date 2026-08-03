@@ -22,7 +22,7 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
-    'device/fcnt/M06',
+    'device/fcnt/hakone',
     'hardware/qcom-caf/sm8450',
     'hardware/qcom-caf/wlan',
     'vendor/qcom/opensource/commonsys/display',
@@ -88,7 +88,7 @@ blob_fixups: blob_fixups_user_type = {
             'android.media.audio.common.types-V2-cpp.so',
             'android.media.audio.common.types-V4-cpp.so',
         )
-        .add_needed('libaudioclient_shim.M06.so'),
+        .add_needed('libaudioclient_shim.hakone.so'),
     (
         'vendor/bin/hw/android.hardware.security.keymint-service-qti',
         'vendor/lib64/libqtikeymint.so',
@@ -186,7 +186,7 @@ blob_fixups: blob_fixups_user_type = {
 }  # fmt: skip
 
 module = ExtractUtilsModule(
-    'M06',
+    'hakone',
     'fcnt',
     blob_fixups=blob_fixups,
     lib_fixups=lib_fixups,

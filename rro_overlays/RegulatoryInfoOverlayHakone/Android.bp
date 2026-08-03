@@ -4,7 +4,7 @@
 //
 
 runtime_resource_overlay {
-    name: "RegulatoryInfoOverlayM06",
+    name: "RegulatoryInfoOverlayHakone",
     vendor: true,
     required: ["component-overrides-regulatory-info.xml"],
 }

@@ -1,5 +1,5 @@
 cc_library_shared {
-    name: "libaudioclient_shim.M06",
+    name: "libaudioclient_shim.hakone",
     shared_libs: ["libaudioclient", "libutils", "liblog"],
     header_libs: ["libmedia_headers"],
     srcs: [

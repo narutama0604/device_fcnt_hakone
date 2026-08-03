@@ -9,7 +9,7 @@
         {
           \"sim-slot-mappings\": [
             {
-              \"devices\": [\"M06\"],
+              \"devices\": [\"hakone\"],
               \"esim-slot-ids\": [1],
               \"psim-slot-ids\": [0]
             }

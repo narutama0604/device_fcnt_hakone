@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/fcnt/M06
+DEVICE_PATH := device/fcnt/hakone
 
 # Inherit virtual_ab_ota_product.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
@@ -18,7 +18,7 @@ $(call soong_config_set,android_hardware_audio,run_64bit,true)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
 # Call the proprietary setup.
-$(call inherit-product, vendor/fcnt/M06/M06-vendor.mk)
+$(call inherit-product, vendor/fcnt/hakone/hakone-vendor.mk)
 
 # Enable updating of APEXes.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
@@ -347,8 +347,8 @@ PRODUCT_PACKAGES += \
     charger_fw_fstab.qti \
     fstab.default \
     init.class_main.sh \
-    init.M06.rc \
-    init.M06.perf.rc \
+    init.hakone.rc \
+    init.hakone.perf.rc \
     init.qcom.class_core.sh \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
@@ -362,15 +362,15 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/bin/init.kernel.post_boot.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.kernel.post_boot.sh \
-    $(LOCAL_PATH)/rootdir/bin/init.M06.perf.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.M06.perf.sh
+    $(LOCAL_PATH)/rootdir/bin/init.hakone.perf.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.hakone.perf.sh
 
 # RRO Overlays
 PRODUCT_PACKAGES += \
     CarrierConfigOverlay \
-    EuiccGoogleOverlayM06 \
+    EuiccGoogleOverlayHakone \
     FrameworksResCommon \
     FrameworksResTarget \
-    RegulatoryInfoOverlayM06 \
+    RegulatoryInfoOverlayHakone \
     SettingsProviderResTarget \
     SettingsResCommon \
     SystemUIResCommon \
@@ -444,7 +444,7 @@ PRODUCT_VENDOR_PROPERTIES += \
 
 # Touchscreen
 PRODUCT_PACKAGES += \
-    vendor.lineage.touch-service.M06
+    vendor.lineage.touch-service.hakone
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml

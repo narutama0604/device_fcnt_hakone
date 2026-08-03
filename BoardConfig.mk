@@ -5,9 +5,9 @@
 #
 
 # Inherit from the proprietary version
--include vendor/fcnt/M06/BoardConfigVendor.mk
+-include vendor/fcnt/hakone/BoardConfigVendor.mk
 
-DEVICE_PATH := device/fcnt/M06
+DEVICE_PATH := device/fcnt/hakone
 KERNEL_PATH := $(DEVICE_PATH)-kernel
 
 # A/B
@@ -56,7 +56,7 @@ SOONG_CONFIG_ufsbsg += ufsframework
 SOONG_CONFIG_ufsbsg_ufsframework := bsg
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := M06
+TARGET_BOOTLOADER_BOARD_NAME := hakone
 TARGET_NO_BOOTLOADER := true
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 
@@ -111,7 +111,7 @@ TARGET_KERNEL_SOURCE := kernel/fcnt/sm7435
 TARGET_KERNEL_CONFIG := \
     gki_defconfig \
     vendor/parrot_GKI.config \
-    vendor/fcnt/M06.config
+    vendor/fcnt/hakone.config
 
 TARGET_KERNEL_EXT_MODULE_ROOT := kernel/fcnt/sm7435-modules
 
@@ -172,7 +172,7 @@ MALLOC_SVELTE := true
 BOARD_USES_METADATA_PARTITION := true
 
 # OTA assert
-TARGET_OTA_ASSERT_DEVICE := M06,M06,F51E
+TARGET_OTA_ASSERT_DEVICE := hakone,M06,F51E
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
