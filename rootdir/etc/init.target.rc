@@ -126,8 +126,12 @@ on boot
     #add haptics calibration write
     chown system system /sys/class/qcom-haptics/lra_calibration
     #finger
-    chmod 0777 /data/vendor_de/0/fpdata
-    chown root root /data/vendor_de/0/fpdata 
+    chmod 0770 /data/vendor_de/0/fpdata
+    chown system system /data/vendor_de/0/fpdata
+    chmod 0600 /data/vendor_de/0/fpdata/user.db
+    chown system system /data/vendor_de/0/fpdata/user.db
+    chmod 0600 /data/vendor_de/0/fpdata/user.db.bakup
+    chown system system /data/vendor_de/0/fpdata/user.db.bakup
     #display
     mkdir /vendor/etc/displayconfig 0644 system system
     chmod 0644 /vendor/etc/displayconfig
