@@ -6,6 +6,12 @@
 
 DEVICE_PATH := device/fcnt/hakone
 
+# AudioFx
+TARGET_INCLUDE_AXFX := true
+
+# Axion stuff
+TARGET_DISABLE_EPPE := true
+
 # Configure core_64_bit.mk
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 
@@ -21,9 +27,11 @@ $(call inherit-product, $(DEVICE_PATH)/device.mk)
 # Inherit from the proprietary version
 $(call inherit-product, vendor/fcnt/hakone/hakone-vendor.mk)
 
-# 2by2 stuff
-PROCESSOR_INFO := Qualcomm Snapdragon 7s Gen 2
-WITAQUA_MAINTAINER := kailua
+# Axion stuff
+AXION_PROCESSOR := Qualcomm_Snapdragon_7s_Gen_2
+AXION_MAINTAINER := シマエナガ好き
+AXION_CAMERA_REAR_INFO := 50,8
+AXION_CAMERA_FRONT_INFO := 16
 
 ## Device identifier
 PRODUCT_DEVICE := hakone
