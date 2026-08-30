@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_hakone.mk
+    $(LOCAL_DIR)/axion_hakone.mk
