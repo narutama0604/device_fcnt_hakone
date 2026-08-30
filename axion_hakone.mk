@@ -27,7 +27,7 @@ WITAQUA_MAINTAINER := kailua
 
 ## Device identifier
 PRODUCT_DEVICE := hakone
-PRODUCT_NAME := lineage_hakone
+PRODUCT_NAME := axion_hakone
 PRODUCT_BRAND := FCNT
 PRODUCT_MODEL := M06
 PRODUCT_MANUFACTURER := FCNT
