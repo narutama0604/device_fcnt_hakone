@@ -29,7 +29,7 @@ $(call inherit-product, vendor/fcnt/hakone/hakone-vendor.mk)
 
 # Axion stuff
 AXION_PROCESSOR := Qualcomm_Snapdragon_7s_Gen_2
-AXION_MAINTAINER := シマエナガ好き
+AXION_MAINTAINER := Shimaenaga_lover
 AXION_CAMERA_REAR_INFO := 50,8
 AXION_CAMERA_FRONT_INFO := 16
 
